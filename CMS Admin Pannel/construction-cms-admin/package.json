@@ -1,0 +1,18 @@
+{
+  "name": "construction-cms-admin",
+  "version": "1.0.0",
+  "description": "Admin panel CMS demo for a construction company website.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.11.5"
+  }
+}

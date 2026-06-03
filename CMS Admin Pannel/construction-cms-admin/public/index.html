@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction CMS Admin</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">CC</span>
+        <div>
+          <strong>ConstructCo</strong>
+          <small>CMS Admin</small>
+        </div>
+      </div>
+
+      <nav class="nav-list" aria-label="Admin sections">
+        <button class="nav-item is-active" data-section="dashboard">Dashboard</button>
+        <button class="nav-item" data-section="banners">Home Banners</button>
+        <button class="nav-item" data-section="company-profile">Company Profile</button>
+        <button class="nav-item" data-section="services">Services</button>
+        <button class="nav-item" data-section="projects">Project Portfolio</button>
+        <button class="nav-item" data-section="testimonials">Testimonials</button>
+        <button class="nav-item" data-section="posts">News and Blog</button>
+        <button class="nav-item" data-section="contacts">Contact Info</button>
+        <button class="nav-item" data-section="messages">Messages</button>
+      </nav>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin Panel</p>
+          <h1 id="pageTitle">Dashboard</h1>
+        </div>
+        <div class="topbar-actions">
+          <span class="api-status" id="apiStatus">Demo Storage</span>
+          <input id="searchInput" type="search" placeholder="Search content" aria-label="Search content">
+        </div>
+      </header>
+
+      <section id="contentArea" class="content-area" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <dialog id="editorDialog" class="editor-dialog">
+    <form id="editorForm" method="dialog">
+      <header class="dialog-header">
+        <div>
+          <p class="eyebrow" id="dialogSection">CMS Section</p>
+          <h2 id="dialogTitle">Add Record</h2>
+        </div>
+        <button class="icon-button" type="button" id="closeDialog" aria-label="Close editor">X</button>
+      </header>
+
+      <div id="formFields" class="form-grid"></div>
+
+      <footer class="dialog-actions">
+        <button class="ghost-button" type="button" id="cancelEdit">Cancel</button>
+        <button class="primary-button" type="submit">Save</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
